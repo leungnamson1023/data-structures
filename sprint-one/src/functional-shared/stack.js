@@ -17,10 +17,10 @@ stackMethods.push = function(value) {
   this.key++;
 };
 
-stackMethods.pop = function(){
+stackMethods.pop = function() {
   var max;
-  for (var key in this.items){
-    if(parseInt(key) > max || max === undefined) {
+  for (var key in this.items) {
+    if (parseInt(key) > max || max === undefined) {
       max = key;
     }
   }
@@ -30,9 +30,9 @@ stackMethods.pop = function(){
   return deleted[0];
 };
 
-stackMethods.size = function(){
+stackMethods.size = function() {
   var counter = 0;
-  for (var key in this.items){
+  for (var key in this.items) {
     counter++;
   }
   return counter;
