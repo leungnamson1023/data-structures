@@ -75,7 +75,6 @@ Graph.prototype.addEdge = function(fromNode, toNode) {
 
 // Remove an edge between any two specified (by value) nodes.
 Graph.prototype.removeEdge = function(fromNode, toNode) {
-  debugger;
   for (var key in this.nodes) {
     if (this.nodes[key] === fromNode) {
       var fromNodeKey = key;
@@ -102,7 +101,6 @@ Graph.prototype.removeEdge = function(fromNode, toNode) {
 // Pass in a callback which will be executed on each node of the graph.
 Graph.prototype.forEachNode = function(cb) {
   for (var key in this.nodes) {
-    console.log(this.nodes[key]);
     cb(this.nodes[key]);
   }
 };
