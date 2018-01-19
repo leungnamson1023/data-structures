@@ -95,7 +95,7 @@ Graph.prototype.removeEdge = function(fromNode, toNode) {
     var edgeIndexCombo2 = this.edges.indexOf(edgeStringCombo2);
     this.edges.splice(edgeStringCombo2, 1);
   }
-
+//
 
 };
 
