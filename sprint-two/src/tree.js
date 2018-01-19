@@ -39,7 +39,6 @@ treeMethods.contains = function(target) {
       result = true;
     } else if (parent.children.length > 0) {
       for (var i = 0; i < parent.children.length; i++) {
-        console.log(parent.children[i]);
         if (parent.children[i].value === target) {
           result = true;
         }
