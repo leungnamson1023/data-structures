@@ -8,8 +8,7 @@ var setPrototype = {};
 
 setPrototype.add = function(item) {
   if (this._storage.indexOf(item) === -1) {
-    this._storage.push(item);
-    console.log(this); 
+    this._storage.push(item); 
   } else {
     return undefined;
   }
