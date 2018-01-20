@@ -83,8 +83,8 @@ Graph.prototype.removeEdge = function(fromNode, toNode) {
       var toNodeKey = key;
     }
   }
-  var edgeStringCombo1 = '"' + toNodeKey + fromNodeKey +'"';
-  var edgeStringCombo2 = '"' + fromNodeKey + toNodeKey +'"';
+  var edgeStringCombo1 = '"' + toNodeKey + fromNodeKey + '"';
+  var edgeStringCombo2 = '"' + fromNodeKey + toNodeKey + '"';
 
   if (this.edges.indexOf(edgeStringCombo1) >= 0) {
     var edgeIndexCombo1 = this.edges.indexOf(edgeStringCombo1);
